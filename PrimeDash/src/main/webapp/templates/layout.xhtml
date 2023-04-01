@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	  	xmlns:h="http://java.sun.com/jsf/html"
+	  	xmlns:f="http://java.sun.com/jsf/core"
+	  	xmlns:p="http://primefaces.org/ui"
+	  	xmlns:ui="http://java.sun.com/jsf/facelets"
+>
+<h:head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>DASH FOOD - DASHBD</title>
+<link rel="shortcut icon" href="https://cdn-icons-png.flaticon.com/512/1532/1532688.png"/>
+ 
+</h:head>
+<h:body >
+
+	
+	<style>
+	
+		.ui-widget-content {
+		
+		    background: black;
+		    color: #4f4f4f;
+		}
+		
+	</style>
+
+
+	<p:layout fullPage="true">
+
+	    <p:layoutUnit position="north" size="160" styleClass="superior">
+	        <ui:insert name="superior"/>
+	    </p:layoutUnit>
+
+	
+	    <p:layoutUnit position="west" size="150" styleClass="esquerda">
+	        <ui:insert name="esquerda"/>
+	    </p:layoutUnit>
+	
+	
+	    <p:layoutUnit position="center" styleClass="centro">
+	        <ui:insert name="centro"/>
+	    </p:layoutUnit>
+
+	</p:layout>
+ 
+</h:body>
+</html>

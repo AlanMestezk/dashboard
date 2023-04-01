@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<ui:composition
+	    xmlns="http://www.w3.org/1999/xhtml"
+		xmlns:h="http://java.sun.com/jsf/html"
+		xmlns:f="http://java.sun.com/jsf/core"
+		xmlns:p="http://primefaces.org/ui"
+		xmlns:ui="http://java.sun.com/jsf/facelets"
+>
+
+
+
+		<style>
+			
+		
+			.divFather{
+				display: flex;
+				justify-content: space-between;
+				align-items: center;
+			}
+			
+			.divUser{
+				text-align: center;
+				margin-left: 2%;
+				margin-top: 12px;
+			}
+			
+			.divUser .imgHomer{
+				width: 100px;
+				height: 80px;
+			}
+			
+			.divUser h4{
+				color: aliceblue;	
+				font-size: 20px;
+				margin-top: -5px;
+			}
+			
+			
+			.divTitle .text{
+				font-size:30px;
+				color: white;
+				font-family: 'Climate Crisis', cursive;
+				font-weight: bolder;
+				color: yellow;
+			}
+			
+			.divButton .button{
+				background-color: white;
+				border-radius: 10px;
+				cursor: pointer;
+			}
+			
+			.divButton .button:hover{
+				background-color: green;
+				color: white;
+			}
+			
+		</style>
+
+
+
+		<div class="divFather">
+		
+			<div class="divUser">
+		
+				<p:graphicImage url="/img/pedido-online.png" width="50px" height="50px" styleClass="imgHomer"/> 
+				<h4>Dash Food</h4>
+			
+			</div>
+			
+			<div class="divTitle">
+		
+				<h:outputText value="DASHBOARD" styleClass="text"/>
+			
+			</div>
+			
+			<div class="divButton">
+		
+				<a href="#"><h:commandButton value="SAIR" styleClass="button"/></a>
+			
+			</div>
+		
+		</div>
+	
+</ui:composition>

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<ui:composition
+	    xmlns="http://www.w3.org/1999/xhtml"
+		xmlns:h="http://java.sun.com/jsf/html"
+		xmlns:f="http://java.sun.com/jsf/core"
+		xmlns:p="http://primefaces.org/ui"
+		xmlns:ui="http://java.sun.com/jsf/facelets"
+>
+
+
+		<style>
+		
+			.divMenuTitle{
+				
+				text-align: center;
+				cursor: pointer;
+			}
+			
+			.divMenuTitle .text{
+				font-family: sans-serif;
+				font-weight: bolder;
+				font-size:30px;
+				color:white;
+			}
+			
+			.divLinks{
+				
+				margin-top: 4px;
+				text-align: center;
+				color: white;
+			}
+			
+			.divLinks .divText{
+				border: solid 1px aliceblue;
+			}
+			
+			.divLinks .divText a{
+				text-decoration: none;
+				color: white;
+			}
+			
+			.divLinks .divText:hover{
+				cursor: pointer;
+				background-color: red;
+			}
+			
+			
+		</style>
+
+
+		
+		<div class="divMenuTitle">
+			<h:outputText value="MENU" styleClass="text"/>
+		</div>
+		
+		<div class="divLinks">
+			<div class="divText">
+				<a href="#"><h:outputText value="NOVO PEDIDO" styleClass="links"/></a>
+			</div>
+			
+			<div class="divText">
+				<a href="#"><h:outputText value="ACOMPANHAR" styleClass="links"/></a>
+			</div>
+		
+			<div class="divText">
+				<a href="#"><h:outputText value="MEU PERFIL" styleClass="links"/></a>
+			</div>
+		</div>
+		
+	
+</ui:composition>
